@@ -31,3 +31,4 @@ And the languages I plan to pick up are:
     * Part 2: Same as Part 1, except removal of any one element is permitted for a sequence to be safe.
         * I had to brute force removing every element in the sequence to determine if this critera could be satisfied.
         * As the length of the sequences was quite small, I felt that this was a reasonably fast way to compute the solution.
+    * I learnt the `zip(arr, arr[1:])` trick (in *Python*) for quickly comparing two consecutive elements in an array for all elements
