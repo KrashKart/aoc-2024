@@ -9,17 +9,21 @@ As a challenge, I plan to use different languages to solve the problems (instead
 * Java
 * Ruby
 * C++
-* JavaScript
 
 And the languages I plan to pick up are:
 * Rust
 * ??? idk
+* JavaScript
 
 # Days
-1. [**Historian Hysteria**](https://adventofcode.com/2024/day/1) (2/2 stars) in *Python*
+> [!NOTE]
+>  * A completion of 2 stars will be noted as (**) and 1 as (*).
+>  * The programming language used for each day will be displayed in *italics*.
+>  * Day names contain clickable links to the AOC problems
+1. [**Historian Hysteria**](https://adventofcode.com/2024/day/1) in *Python* (**)
     * Part 1: A list difference problem -- compare the elements in 2 lists (arranged in ascending order) and find the sum of all their differences. (Trivial)
     * Part 2: A variation where for each unique number in list A, `A[i]`, the sum of `A[i] * freq(A[i] in B)` had to be found. (Trivial)
-2. [**Red-Nosed Reports**](https://adventofcode.com/2024/day/2) (2/2 stars) in *Python*
+2. [**Red-Nosed Reports**](https://adventofcode.com/2024/day/2) in *Python* (**)
     * Part 1: Given a list of sequences of numbers, determine how many sequences are "safe". Safe sequences must:
         * Contain consecutive elements that differ by not more than 3 and not less than 1
         * Contain elements in either ascending or descending order
