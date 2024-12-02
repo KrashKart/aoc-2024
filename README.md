@@ -18,9 +18,10 @@ And the languages I plan to pick up are:
 # Days
 > [!NOTE]
 >  * A completion of 2 stars will be noted as (**) and 1 as (*).
->  * The programming language used for each day will be displayed in *italics*.
->  * Day names contain clickable links to the AOC problems
-1. [**Historian Hysteria**](https://adventofcode.com/2024/day/1) in *Python* (**)
+>  * The programming language(s) used for each day will be displayed in *italics*.
+>  * Day names contain clickable links to the AOC problems.
+
+1. [**Historian Hysteria**](https://adventofcode.com/2024/day/1) in *Java* and *Python* (**)
     * Part 1: A list difference problem -- compare the elements in 2 lists (arranged in ascending order) and find the sum of all their differences. (Trivial)
     * Part 2: A variation where for each unique number in list A, `A[i]`, the sum of `A[i] * freq(A[i] in B)` had to be found. (Trivial)
 2. [**Red-Nosed Reports**](https://adventofcode.com/2024/day/2) in *Python* (**)
