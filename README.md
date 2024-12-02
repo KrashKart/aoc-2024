@@ -3,6 +3,18 @@ A repo containing my code for [AOC 2024](https://adventofcode.com/2024/about), c
 
 This is my 2nd year participating, and I look forward to solving the code challenges this year! Unfortunately, I will not be tracking leaderboard position or solve timings, partly due to the fact that I will be overseas (and unable to complete the problems daily) for a large chunk of December and also partly because I do not want to rush myself.
 
+# Challenge
+As a challenge, I plan to use different languages to solve the problems (instead of only Python in AOC 2023). The languages I plan to use are:
+* Python (duh)
+* Java
+* Ruby
+* C++
+* JavaScript
+
+And the languages I plan to pick up are:
+* Rust
+* ??? idk
+
 # Days
 1. Historian Hysteria (2/2 stars)
     * Part 1: A list difference problem -- compare the elements in 2 lists (arranged in ascending order) and find the sum of all their differences. (Trivial)
