@@ -1,42 +1,35 @@
-# helpers
-def isSafeInterval(a, b):
-    return 1 <= abs(a - b) and abs(a - b) <= 3
-
+# helper
 def isSafeArr(arr):
     if sorted(arr) != arr and sorted(arr, reverse=True) != arr:
         return False
 
-    for i in range(1, len(arr)):
-        if not isSafeInterval(arr[i], arr[i - 1]):
+    for i, j in zip(arr, arr[1:]):
+        if 1 > abs(i - j) or abs(i - j) > 3:
             return False
     return True
 
+# read lines
+
 # part 1
 total1 = 0
-reports = []
+total2 = 0
 with open("day_02/day_02.txt", "r") as f:
     for line in f:
         seq = list(map(int, line.split(" ")))
-        reports.append(seq)
 
-for seq in reports:
-    if isSafeArr(seq):
-        total1 += 1
-    
+        # part 1 and 2
+        if isSafeArr(seq):
+            total1 += 1
+            total2 += 1
+        else:
+            # part 2
+            for i in range(len(seq)):
+                temp = seq[::]
+                temp.pop(i)
+                if isSafeArr(temp):
+                    total2 += 1
+                    break
 
 print("Part 1: " + str(total1))
-
-# part 2
-total2 = 0
-for seq in reports:
-    if isSafeArr(seq):
-        total2 += 1
-    else:
-        for i in range(len(seq)):
-            temp = seq[::]
-            temp.pop(i)
-            if isSafeArr(temp):
-                total2 += 1
-                break
 
 print("Part 2: " + str(total2))
