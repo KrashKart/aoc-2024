@@ -13,10 +13,8 @@ with open("day_03/day_03.txt", "r") as f:
                 total2 += do * int(match[0]) * int(match[1])
             
             # part 2
-            elif match[2]:
-                do = 1
-            else:
-                do = 0
+            elif match[2]: do = 1
+            else: do = 0
 
 print("Part 1: " + str(total1))
 print("Part 2: " + str(total2))
