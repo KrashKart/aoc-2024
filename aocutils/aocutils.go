@@ -1,12 +1,18 @@
 package aocutils
 
 import (
+	"fmt"
 	"bufio"
 	"os"
+	"strconv"
 )
 
-func Reader(filename string) []string {
-	file, err := os.Open(filename)
+const filepath string = "day_%02d/day_%02d.txt"
+
+// Reads from an input txt file. 
+// day parameter is the nth day
+func Reader(day int) []string {
+	file, err := os.Open(fmt.Sprintf(filepath, day, day))
 	if err != nil {
 		panic(err)
 	}
@@ -19,4 +25,10 @@ func Reader(filename string) []string {
 	}
 
 	return res
+}
+
+// Converts string to integer
+func ToI(s string) int {
+	val, _ := strconv.Atoi(s)
+	return val
 }
