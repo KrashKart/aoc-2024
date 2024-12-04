@@ -35,7 +35,7 @@ And the languages I plan to pick up are:
         * I had to brute force removing every element in the sequence to determine if this critera could be satisfied.
         * As the length of the sequences was quite small, I felt that this was a reasonably fast way to compute the solution.
     * I learnt the `zip(arr, arr[1:])` trick (in *Python*) for quickly comparing two consecutive elements in an array for all elements
-3. [**Mull it Over**](https://adventofcode.com/2024/day/3) in *Python* (**)
+3. [**Mull it Over**](https://adventofcode.com/2024/day/3) in *Python* and *Go* (**)
     * Part 1: Typical regex question, parsing patterns of `mul(x,y)` and evaluating the sum of all `x * y` in long strings. (Trivial)
     * Part 2: Part 1 but with extra parsing of `do()` and `don't()` terms required, which enabled or disabled the `mul(x,y)` operations and affected the sum. (Trivial)
     * Testing my regex I see!
