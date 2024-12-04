@@ -23,5 +23,5 @@ func Day_03() {
 		}
 	}
 
-	a.printPartsInt(total1, total2)
+	a.PrintPartsInt(total1, total2)
 }

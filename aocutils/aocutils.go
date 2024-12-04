@@ -45,13 +45,13 @@ func OutOfBounds(i int, j int, iMin int, jMin int, iMax int, jMax int) bool {
 }
 
 // prints parts
-func printPartsInt(part1 int, part2 int) {
+func PrintPartsInt(part1 int, part2 int) {
 	fmt.Printf("Part 1: %d\n", part1)
 	fmt.Printf("Part 2: %d\n", part2)
 }
 
 // prints parts
-func printPartsStr(part1 string, part2 string) {
+func PrintPartsStr(part1 string, part2 string) {
 	fmt.Printf("Part 1: %s\n", part1)
 	fmt.Printf("Part 2: %s\n", part2)
 }
