@@ -5,3 +5,4 @@
 *.sum
 .vscode
 main.go
+*.pyc
