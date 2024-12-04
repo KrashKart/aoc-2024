@@ -1,3 +1,6 @@
 *.class
 .env
 .env.test
+*.mod
+*.sum
+.vscode

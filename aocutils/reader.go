@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func reader(filename string) []string {
+func Reader(filename string) []string {
 	file, err := os.Open(filename)
 	if err != nil {
 		panic(err)
