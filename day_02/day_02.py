@@ -1,5 +1,4 @@
 import aocutils
-import aocutils.inputRetriever
 
 # helper
 def isSafeArr(arr):
@@ -13,7 +12,7 @@ def isSafeArr(arr):
 
 total1 = 0
 total2 = 0
-lines = aocutils.readFile(2)
+lines = aocutils.readFile(2, False)
 
 for line in lines:
     seq = list(map(int, line.split(" ")))

@@ -5,7 +5,7 @@ total1 = 0
 total2 = 0
 do = 1
 
-lines = aocutils.readFile(3)
+lines = aocutils.readFile(3, False)
 for line in lines:
     muls = re.findall(r"mul\((\d+),(\d+)\)|(do\(\))|(don't\(\))", line)
     for match in muls:

@@ -3,7 +3,7 @@ import aocutils
 # part 1
 arr1 = []
 arr2 = []
-lines = aocutils.readFile(1)
+lines = aocutils.readFile(1, False)
 
 for line in lines:
     i, j = list(map(int, line.strip().split('  ')))
