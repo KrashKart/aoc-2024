@@ -2,7 +2,6 @@ package day_03
 
 import (
 	a "aoc_2024/aocutils"
-	"fmt"
 	"regexp"
 )
 
@@ -24,6 +23,5 @@ func Day_03() {
 		}
 	}
 
-	fmt.Printf("Part 1: %d\n", total1)
-	fmt.Printf("Part 2: %d\n", total2)
+	a.printPartsInt(total1, total2)
 }

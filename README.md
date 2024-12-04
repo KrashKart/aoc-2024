@@ -39,3 +39,6 @@ And the languages I plan to pick up are:
     * Part 1: Typical regex question, parsing patterns of `mul(x,y)` and evaluating the sum of all `x * y` in long strings. (Trivial)
     * Part 2: Part 1 but with extra parsing of `do()` and `don't()` terms required, which enabled or disabled the `mul(x,y)` operations and affected the sum. (Trivial)
     * Testing my regex I see!
+4. [**Ceres Search**](https://adventofcode.com/2024/day/3) in *Python* and *Ruby* (**)
+    * Part 1: A word search problem, having to find `XMAS` in a word search. Would say trivial but honestly I couldn't think of anything else other than brute-force.
+    * Part 2: Same as Part 1 except `MAS` and `SAM` arranged in an "X" had to be found (see the problem I'm bad at explaining this one). Again trivial but brute-forced.

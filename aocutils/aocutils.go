@@ -32,3 +32,26 @@ func ToI(s string) int {
 	val, _ := strconv.Atoi(s)
 	return val
 }
+
+// Converts integer to string
+func ToS(i int) string {
+	s := strconv.Itoa(i)
+	return s
+}
+
+// Checks out for bounds for array traversal problems
+func OutOfBounds(i int, j int, iMin int, jMin int, iMax int, jMax int) bool {
+	return i < iMin || i > iMax || j < jMin || j > jMax
+}
+
+// prints parts
+func printPartsInt(part1 int, part2 int) {
+	fmt.Printf("Part 1: %d\n", part1)
+	fmt.Printf("Part 2: %d\n", part2)
+}
+
+// prints parts
+func printPartsStr(part1 string, part2 string) {
+	fmt.Printf("Part 1: %s\n", part1)
+	fmt.Printf("Part 2: %s\n", part2)
+}
