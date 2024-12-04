@@ -1,11 +1,14 @@
+import aocutils
+
 # part 1
 arr1 = []
 arr2 = []
-with open("day_01/day_01.txt", "r") as f:
-    for line in f:
-        i, j = list(map(int, line.strip().split('  ')))
-        arr1.append(i)
-        arr2.append(j)
+lines = aocutils.readFile(1)
+
+for line in lines:
+    i, j = list(map(int, line.strip().split('  ')))
+    arr1.append(i)
+    arr2.append(j)
 
 arr1, arr2 = sorted(arr1), sorted(arr2)
 
