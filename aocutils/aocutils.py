@@ -1,7 +1,9 @@
-def readFile(day: int, toList: bool = True) -> list[str]:
+def readFile(day: int, isTest = False, toList: bool = True) -> list[str]:
     res = []
-    with open(f"day_{day:02}/day_{day:02}.txt", "r") as f:
+    filename = f"day_{day:02}/day_{day:02}.txt" if not isTest else f"day_{day:02}/test.txt"
+    with open(filename, "r") as f:
         for line in f:
+            line = line.strip()
             if toList:
                 line = list(line)
             res.append(line)
