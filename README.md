@@ -42,3 +42,7 @@ And the languages I plan to pick up are:
     * Part 1: A word search problem, having to find `XMAS` in a word search. Would say trivial but honestly I couldn't think of anything else other than brute-force dynamic programming.
     * Part 2: Same as Part 1 except `MAS` and `SAM` arranged in an "X" had to be found (see the problem I'm bad at explaining this one). Again trivial but brute-forced.
     * Glad to say the lessons learnt in AOC 2023 paid off. Used the `i + di, j + dj` method quite effectively here.
+5. [**Print Queue**](https://adventofcode.com/2024/day/5), *Python* ( :star: :star: )
+    * Part 1: A very unique problem that required us to check the validity of sequences of numbers as defined by a ruleset (again visit the problem website, I'm bad at explaining this concisely). I was surprised at how unorthodox it was (but to be fair AOC 2023 was worse in this regard). Not trivial and enjoyed it!
+    * Part 2: Same thing, except we have to correct the invalid sequences.
+    * My initial solution worked but was too long, then I realised I could just use a custom comparator and check if the sequence was sorted, which reduced my solution length considerably. My first functools-based solution! 
