@@ -47,3 +47,8 @@ And the languages I plan to pick up are:
     * Part 1: A very unique problem that required us to check the validity of sequences of numbers as defined by a ruleset (again visit the problem website, I'm bad at explaining this concisely). I was surprised at how unorthodox it was (but to be fair AOC 2023 was worse in this regard). Not trivial and enjoyed it!
     * Part 2: Same thing, except we have to correct the invalid sequences.
     * My initial solution worked but was too long, then I realised I could just use a custom comparator and check if the sequence was sorted, which reduced my solution length considerably. My first functools-based solution! 
+6. [**Guard Gallivant**](https://adventofcode.com/2024/day/6), *Python* ( :star: :star: )
+    * Part 1: A typical traversal problem! Trivial but made many careless mistakes.
+    * Part 2: Another typical traversal problem but with the choice to add an obstacle anywhere to induce a cyclic path. Brute-forced (which was ugly) but still trivial.
+    * I got so pissed that I made a `gridutils.py` file that contained `Grid`, `Pos` and `Direction` classes, but found out that the runtime increased from 17s ([without `gridutils`](./day_06/day_06_withoutGrid.py]) to 4 mins ([with `gridutils`](./day_06/day_06_withGrid.py))!!! 
+    * Solution with gridutils was nicer from an OOP perspective though...
