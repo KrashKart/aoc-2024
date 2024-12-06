@@ -13,7 +13,7 @@ end
 def traverse(i, j, di = -1, dj = 0, isPart1=true)
   total = 0
   moves = 0
-  while (!out_of_bounds(i, j, 0, 0, @h - 1, @w - 1) and moves <= @h * @w)
+  while (!out_of_bounds(i, j, 0, 0, @h - 1, @w - 1) && moves <= @h * @w)
       if @grid[i][j] == "#"
           i, j = i - di, j - dj
           di, dj = dj, -di
