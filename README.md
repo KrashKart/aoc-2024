@@ -19,6 +19,7 @@ And the languages I plan to pick up are:
 - [ ] Rust
 - [ ] JavaScript
 - [x] Go
+- [x] Holy C (unfortunately could not get this to work because Strings are weird in HolyC)
 - [ ] ??? idk :sweat_smile:
 
 # Days
@@ -30,7 +31,7 @@ And the languages I plan to pick up are:
 1. [**Historian Hysteria**](https://adventofcode.com/2024/day/1), *Python* and *Java* ( :star: :star: )
     * Part 1: A list difference problem -- compare the elements in 2 lists (arranged in ascending order) and find the sum of all their differences. (Trivial)
     * Part 2: A variation where for each unique number in list A, `A[i]`, the sum of `A[i] * freq(A[i] in B)` had to be found. (Trivial)
-2. [**Red-Nosed Reports**](https://adventofcode.com/2024/day/2), *Python* ( :star: :star: )
+2. [**Red-Nosed Reports**](https://adventofcode.com/2024/day/2), *Python* and *Holy C* ( :star: :star: )
     * Part 1: Given a list of sequences of numbers, determine how many sequences are "safe". Safe sequences must either only ascend or descend and consecutive numbers must differ by `1 <= diff <= 3` (trivial)
     * Part 2: Same as Part 1, except removal of any one element is permitted for a sequence to be safe.
         * I had to brute force removing every element in the sequence to determine if this critera could be satisfied. Not elegant but works due to the small sequence length
