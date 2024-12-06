@@ -1,4 +1,4 @@
-def readFile(day)
+def readFile(day, toList = true)
   padded_day = day.to_s() 
   if day.to_s.length == 1
         padded_day = "0" + padded_day
@@ -6,6 +6,9 @@ def readFile(day)
   fstring = "day_%s/day_%s.txt" % [padded_day, padded_day]
   
   f = File.read(fstring).split
+  if toList
+    f = f.map{|x| x.split("")}
+  end
   return f
 end
 
