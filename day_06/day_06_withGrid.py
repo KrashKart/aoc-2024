@@ -1,9 +1,7 @@
 import aocutils
 from gridutils import Grid, Pos, Direction
 
-# This solution runs in 4 MINUTES!!
-# using time.time()
-
+# This solution runs in 3.7 MINUTES!!
 gridRaw = aocutils.readFile(6)
 
 grid = Grid(gridRaw)
@@ -32,7 +30,7 @@ total2 = 0
 for x in range(grid.height):
     for y in range(grid.width):
         pos = Pos(x, y)
-        if grid.get(pos) != "#":
+        if grid.get(pos) == "X":
             grid.replace(pos, "#")
             if traverse(startPos, isPart1=False) > grid.height * grid.width:
                 total2 += 1

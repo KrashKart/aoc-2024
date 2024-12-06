@@ -1,6 +1,6 @@
 import aocutils
 
-# this solution runs in 16 seconds
+# this solution runs in 13 seconds
 
 grid = aocutils.readFile(6)
 
@@ -30,7 +30,7 @@ total1 = traverse(starti, startj) + 1
 total2 = 0
 for x in range(h):
     for y in range(w):
-        if grid[x][y] != "#":
+        if grid[x][y] == "X":
             grid[x][y] = "#"
             if traverse(starti, startj, isPart1=False) > h * w:
                 total2 += 1
