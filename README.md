@@ -52,7 +52,7 @@ And the languages I plan to pick up are:
     * Part 2: Another typical traversal problem but with the choice to add an obstacle anywhere to induce a cyclic path. Brute-forced (which was ugly) but still trivial.
     * I got so pissed that I made a `gridutils.py` file that contained `Grid`, `Pos` and `Direction` classes, but found out that the runtime increased from 13s ([without `gridutils`](./day_06/day_06_withoutGrid.py])) to 3.7 mins ([with `gridutils`](./day_06/day_06_withGrid.py))!!! 
     * Solution for part 2 was optimised by checking the grid positions involved in the path of the guard
-7. [**Bridge Repair**](https://adventofcode.com/2024/day/7), *Python* ( :star: :star: )
+7. [**Bridge Repair**](https://adventofcode.com/2024/day/7), *Python* and *Go* ( :star: :star: )
     * Part 1: Typical DP problem, simply try all combinations of `+` and `*` for all values.
     * Part 2: Surprisingly easy, DP again with an additional option of concatenation
     * :alert: First sub 20 min!!
