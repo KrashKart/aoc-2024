@@ -27,6 +27,16 @@ func Reader(day int) []string {
 	return res
 }
 
+
+// maps element in array
+func MapToInt(arr []string) []int {
+	res := make([]int, len(arr))
+	for i := range len(arr) {
+		res[i] = ToI(arr[i])
+	}
+	return res
+}
+
 // Converts string to integer
 func ToI(s string) int {
 	val, _ := strconv.Atoi(s)
