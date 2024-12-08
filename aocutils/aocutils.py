@@ -1,4 +1,5 @@
 import time
+from multipledispatch import dispatch
 
 def readFile(day: int, isTest = False, toList: bool = True) -> list[str]:
     res = []
@@ -11,8 +12,13 @@ def readFile(day: int, isTest = False, toList: bool = True) -> list[str]:
             res.append(line)
     return res
 
+@dispatch(int, int, int, int, int, int)
 def outOfBounds(i: int, j: int, iMin: int, jMin: int, iMax: int, jMax: int) -> bool:
     return i < iMin or i > iMax or j < jMin or j > jMax
+
+@dispatch(int, int, int, int)
+def outOfBounds(i: int, j: int, iMax: int, jMax: int) -> bool:
+    return i < 0 or i > iMax or j < 0 or j > jMax
 
 def printParts(part1, part2):
     print("Part 1: " + str(part1))

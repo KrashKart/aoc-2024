@@ -16,7 +16,7 @@ def matchPattern(i, j):
 def traverse(i, j, dir, accum):
     if accum == "XMAS":
         return 1
-    elif len(accum) > 4 or aocutils.outOfBounds(i, j, 0, 0, len(grid) - 1, len(grid[0]) - 1):
+    elif len(accum) > 4 or aocutils.outOfBounds(i, j, len(grid) - 1, len(grid[0]) - 1):
         return 0
     return traverse(i + dir[0], j + dir[1], dir, accum + grid[i][j])
 

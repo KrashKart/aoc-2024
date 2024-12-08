@@ -2,7 +2,7 @@ import aocutils
 
 def findAntinodes(i, j, i_diff, j_diff, h, w):
 	antinodes = []
-	while not aocutils.outOfBounds(i + i_diff, j + j_diff, 0, 0, h - 1, w - 1):
+	while not aocutils.outOfBounds(i + i_diff, j + j_diff, h - 1, w - 1):
 		antinodes.append((i + i_diff, j + j_diff))
 		i += i_diff
 		j += j_diff
