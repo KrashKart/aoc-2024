@@ -1,19 +1,11 @@
 import aocutils
+from copy import deepcopy
+from multiprocessing import Pool
 
-# this solution runs in 13 seconds
-
-grid = aocutils.readFile(6)
-
-h, w = len(grid), len(grid[0])
-
-for idx, g in enumerate(grid):
-    if "^" in g:
-        starti, startj = idx, g.index("^")
-grid[starti][startj] = "X"
-
-def traverse(i, j, di = -1, dj = 0, isPart1=True):
+def traverse(grid, i, j, h, w, isPart1=True):
     total = 0
     moves = 0
+    di, dj = -1, 0 
     while (not aocutils.outOfBounds(i, j, 0, 0, h - 1, w - 1) and moves <= h * w):
         if grid[i][j] == "#":
             i, j = i - di, j - dj
@@ -25,15 +17,26 @@ def traverse(i, j, di = -1, dj = 0, isPart1=True):
         moves += 1
     return total if isPart1 else moves
 
-total1 = traverse(starti, startj) + 1
+def modifyTraverse(grid, modi, modj, starti, startj, h, w):
+    gridCopy = deepcopy(grid)
+    gridCopy[modi][modj] = "#"
+    return traverse(gridCopy, starti, startj, h, w, isPart1=False) > h * w
 
-total2 = 0
-for x in range(h):
-    for y in range(w):
-        if grid[x][y] == "X":
-            grid[x][y] = "#"
-            if traverse(starti, startj, isPart1=False) > h * w:
-                total2 += 1
-            grid[x][y] = "."
+@aocutils.timeFunction
+def main():
+    grid = aocutils.readFile(6)
+    h, w = len(grid), len(grid[0])
+    pool = Pool()
 
-aocutils.printParts(total1, total2)
+    for idx, g in enumerate(grid):
+        if "^" in g:
+            starti, startj = idx, g.index("^")
+    grid[starti][startj] = "X"
+
+    total1 = traverse(grid, starti, startj, h, w) + 1
+    total2 = sum(pool.starmap(modifyTraverse, [(grid, x, y, starti, startj, h, w) for x in range(h) for y in range(w) if grid[x][y] == "X"]))
+
+    aocutils.printParts(total1, total2)
+
+if __name__ == "__main__":
+    main()

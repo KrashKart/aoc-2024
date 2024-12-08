@@ -20,13 +20,16 @@ def traverse(i, j, dir, accum):
         return 0
     return traverse(i + dir[0], j + dir[1], dir, accum + grid[i][j])
 
-count1 = 0
-count2 = 0
-for i in range(len(grid)):
-    for j in range(len(grid[0])):
-        for dir in dirs:
-            count1 += traverse(i, j, dir, "")
-        count2 += matchPattern(i, j)
+@aocutils.timeFunction
+def main():
+    total1, total2 = 0, 0
+    for i in range(len(grid)):
+        for j in range(len(grid[0])):
+            for dir in dirs:
+                total1 += traverse(i, j, dir, "")
+            total2 += matchPattern(i, j)
 
-aocutils.printParts(count1, count2)
+    aocutils.printParts(total1, total2)
 
+if __name__ == "__main__":
+    main()

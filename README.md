@@ -55,4 +55,4 @@ And the languages I plan to pick up are:
 7. [**Bridge Repair**](https://adventofcode.com/2024/day/7), *Python* and *Go* ( :star: :star: )
     * Part 1: Typical DP problem, simply try all combinations of `+` and `*` for all values.
     * Part 2: Surprisingly easy, DP again with an additional option of concatenation
-    * :alert: First sub 20 min!!
+    * :tada: First sub 20 min!!

@@ -15,14 +15,19 @@ def isGreater(a, b):
         elif r == (b, a):
             return 1
 
-total1 = 0
-total2 = 0
-for u in updates:
-    uOriginal = u[::]
-    uOriginal.sort(key=functools.cmp_to_key(isGreater))
-    if uOriginal == u:
-        total1 += u[len(u) // 2]
-    else:
-        total2 += uOriginal[len(u) // 2]
+@aocutils.timeFunction
+def main():
+    total1 = 0
+    total2 = 0
+    for u in updates:
+        uOriginal = u[::]
+        uOriginal.sort(key=functools.cmp_to_key(isGreater))
+        if uOriginal == u:
+            total1 += u[len(u) // 2]
+        else:
+            total2 += uOriginal[len(u) // 2]
 
-aocutils.printParts(total1, total2)
+    aocutils.printParts(total1, total2)
+
+if __name__ == "__main__":
+    main()

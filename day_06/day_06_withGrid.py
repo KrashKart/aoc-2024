@@ -2,6 +2,8 @@ import aocutils
 from gridutils import Grid, Pos, Direction
 
 # This solution runs in 3.7 MINUTES!!
+# Not optimised with multiprocessing
+
 gridRaw = aocutils.readFile(6)
 
 grid = Grid(gridRaw)
