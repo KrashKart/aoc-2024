@@ -50,9 +50,12 @@ And the languages I plan to pick up are:
 6. [**Guard Gallivant**](https://adventofcode.com/2024/day/6), *Python* and *Ruby* ( :star: :star: )
     * Part 1: A typical traversal problem! Trivial but made many careless mistakes.
     * Part 2: Another typical traversal problem but with the choice to add an obstacle anywhere to induce a cyclic path. Brute-forced (which was ugly) but still trivial.
-    * I got so pissed that I made a `gridutils.py` file that contained `Grid`, `Pos` and `Direction` classes, but found out that the runtime increased from 13s ([without `gridutils`](./day_06/day_06_withoutGrid.py])) to 3.7 mins ([with `gridutils`](./day_06/day_06_withGrid.py))!!! 
+    * I got so pissed that I made a `gridutils.py` file that contained `Grid`, `Pos` and `Direction` classes, but found out that the runtime increased from 13s without parallelism ([without `gridutils`](./day_06/day_06_withoutGrid.py])) to 3.7 mins ([with `gridutils`](./day_06/day_06_withGrid.py))!!! 
     * Solution for part 2 was optimised by checking the grid positions involved in the path of the guard
 7. [**Bridge Repair**](https://adventofcode.com/2024/day/7), *Python* and *Go* ( :star: :star: )
     * Part 1: Typical DP problem, simply try all combinations of `+` and `*` for all values.
     * Part 2: Surprisingly easy, DP again with an additional option of concatenation
     * :tada: First sub 20 min!!
+8. [**Resonant Collinearity**](https://adventofcode.com/2024/day/8), *Python* ( :star: :star: )
+    * Part 1: Interesting collinearity problem; to count outer collinear points, given a set of pairs `(x1, y1)` and `(x2, y2)`, at distance `(abs(x1 - x2), abs(y1 - y2))` from the points. Trivial but I messed up my vector math :cry:
+    * Part 2: Same as part 1 but for all collinear points at intervals of `(abs(x1 - x2), abs(y1 - y2))` from the points. Trivial, but had trouble with combining parts 1 and 2 due to off by 2 errors (the original 2 points counted as 2 collinear points)
