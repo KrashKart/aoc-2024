@@ -20,6 +20,7 @@ And the languages I plan to pick up are:
 - [ ] JavaScript
 - [x] Go
 - [x] Holy C (unfortunately could not get this to work because Strings are weird in HolyC)
+- [ ] PyGyat (for maximum Brainrot)
 - [ ] ??? idk :sweat_smile:
 
 # Days
