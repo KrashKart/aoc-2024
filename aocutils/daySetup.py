@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 now = datetime.now()
-day = now.day
+# day = now.day
+day = 8
 year = now.year
 padded_day = str(day).rjust(2, "0")
 
@@ -18,7 +19,7 @@ DIR = os.path.abspath(f"{os.getenv('DIRPATH')}/aoc_{year}/day_{padded_day}")
 TXT = os.path.abspath(f"{DIR}/day_{padded_day}.txt")
 SOLN_PY_FILE = os.path.abspath(f"{DIR}/day_{padded_day}.py")
 
-PY_FILE_TEMPLATE = f"import aocutils\n\n@aocutils.timeFunction\ndef main():\n\tref = aocutils.readFile({day})\n\ttotal1, total2 = 0, 0\n\n\taocutils.printParts(total1, total2)\nif __name__ == \"__main__\":\n\tmain()"
+PY_FILE_TEMPLATE = f"import aocutils\n\n@aocutils.timeFunction\ndef main():\n\tref = aocutils.readFile({day})\n\ttotal1, total2 = 0, 0\n\n\taocutils.printParts(total1, total2)\n\nif __name__ == \"__main__\":\n\tmain()"
 
 # DO NOT RUN too frequently to throttle requests!
 if __name__ == "__main__":

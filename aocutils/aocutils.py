@@ -1,12 +1,14 @@
 import time
 from multipledispatch import dispatch
 
-def readFile(day: int, isTest = False, toList: bool = True) -> list[str]:
+def readFile(day: int, splitOn: str = "", isTest: bool = False, toList: bool = True) -> list[str]:
     res = []
     filename = f"day_{day:02}/day_{day:02}.txt" if not isTest else f"day_{day:02}/test.txt"
     with open(filename, "r") as f:
         for line in f:
             line = line.strip()
+            if splitOn:
+                line = line.split(splitOn)
             if toList:
                 line = list(line)
             res.append(line)
@@ -31,3 +33,6 @@ def timeFunction(func):
         print(f"Time taken: {time.time() - startTime}")
         return res
     return wrapper
+
+def getLRUD():
+    return [(-1, 0), (1, 0), (0, -1), (0, 1)]
