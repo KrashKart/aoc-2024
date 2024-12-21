@@ -38,7 +38,7 @@ And the languages I plan to pick up are:
 8. [**Resonant Collinearity**](https://adventofcode.com/2024/day/8), *Python* ( :star: :star: )
 9. [**Disk Fragmenter**](https://adventofcode.com/2024/day/9), *Python* ( :star: :star: )
 10. [**Hoof It**](https://adventofcode.com/2024/day/10), *Python* ( :star: :star: )
-11. [**Plutonian Pebbles**](https://adventofcode.com/2024/day/12), *Python* ( :star: :star: )
+11. [**Plutonian Pebbles**](https://adventofcode.com/2024/day/11), *Python* ( :star: :star: )
 13. [**Claw Contraption**](https://adventofcode.com/2024/day/13), *Python* ( :star: :star: )
 14. [**Restroom Redoubt**](https://adventofcode.com/2024/day/14), *Python* ( :star: :star: )
 15. [**Warehouse Woes**](https://adventofcode.com/2024/day/15), *Python* ( :star: :star: )
