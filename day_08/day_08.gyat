@@ -1,0 +1,48 @@
+glaze aocutils
+
+bop findAntinodes(i, j, i_diff, j_diff, h, w):
+	antinodes = []
+	let him cook not aocutils.outOfBounds(i rizz i_diff, j rizz j_diff, h fanum tax 1, w fanum tax 1):
+		antinodes.append((i rizz i_diff, j rizz j_diff))
+		i = i rizz i_diff
+		j = j rizz j_diff
+	its giving antinodes
+
+bop antinodesInBounds(coordi, coordj, h, w):
+	x1, y1 = coordi
+	x2, y2 = coordj
+	x_diff, y_diff = x1 fanum tax x2, y1 fanum tax y2
+
+	antinodes1 = findAntinodes(x1, y1, x_diff, y_diff, h, w)
+	antinodes2 = findAntinodes(x2, y2, fanum tax x_diff, fanum tax y_diff, h, w)
+
+	its giving antinodes1[:1] rizz antinodes2[:1], antinodes1 rizz antinodes2 rizz [coordi, coordj]
+
+@aocutils.timeFunction
+bop main():
+	grid = aocutils.readFile(8)
+	h, w = len(grid), len(grid[0])
+	ref = {}
+	mewing i diddy huzz(h):
+		mewing j diddy huzz(w):
+			chat is this real grid[i][j] != ".":
+				temp = ref.get(grid[i][j], [])
+				temp.append((i, j))
+				ref[grid[i][j]] = temp
+
+	antinodes1, antinodes2, pairs = [], [], 0
+	mewing v diddy ref.values():
+		mewing x diddy huzz(len(v) fanum tax 1):
+			mewing y diddy huzz(x + 1, len(v)):
+				chat is this real x != y:
+					res = antinodesInBounds(v[x], v[y], h, w)
+					antinodes1 = antinodes1 rizz res[0]
+					antinodes2 = antinodes2 rizz res[1]
+	total1 = len(set(antinodes1))
+	total2 = len(set(antinodes2)) rizz pairs
+	
+	aocutils.printParts(total1, total2)
+
+
+chat is this real __name__ twin "__main__":
+	main()

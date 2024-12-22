@@ -20,7 +20,7 @@ And the languages I plan to pick up are:
 - [ ] JavaScript
 - [x] Go
 - [x] Holy C (unfortunately could not get this to work because Strings are weird in HolyC)
-- [ ] PyGyat (for maximum Brainrot)
+- [x] PyGyat (for maximum Brainrot)
 - [ ] ??? idk :sweat_smile:
 
 # Days
@@ -36,7 +36,7 @@ And the languages I plan to pick up are:
 5. [**Print Queue**](https://adventofcode.com/2024/day/5), *Python* and *Java* ( :star: :star: )
 6. [**Guard Gallivant**](https://adventofcode.com/2024/day/6), *Python* and *Ruby* ( :star: :star: )
 7. [**Bridge Repair**](https://adventofcode.com/2024/day/7), *Python* and *Go* ( :star: :star: )
-8. [**Resonant Collinearity**](https://adventofcode.com/2024/day/8), *Python* ( :star: :star: )
+8. [**Resonant Collinearity**](https://adventofcode.com/2024/day/8), *Python* and *PyGyat* ( :star: :star: )
 9. [**Disk Fragmenter**](https://adventofcode.com/2024/day/9), *Python* ( :star: :star: )
 10. [**Hoof It**](https://adventofcode.com/2024/day/10), *Python* ( :star: :star: )
 11. [**Plutonian Pebbles**](https://adventofcode.com/2024/day/11), *Python* ( :star: :star: )
@@ -44,3 +44,4 @@ And the languages I plan to pick up are:
 14. [**Restroom Redoubt**](https://adventofcode.com/2024/day/14), *Python* ( :star: :star: )
 15. [**Warehouse Woes**](https://adventofcode.com/2024/day/15), *Python* ( :star: :star: )
 16. [**Reindeer Maze**](https://adventofcode.com/2024/day/16), *Python* ( :star: :star: )
+17. [**Chronospatial Computer**](https://adventofcode.com/2024/day/17), *Python* ( :star: :star: )
