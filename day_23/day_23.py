@@ -1,5 +1,12 @@
 import aocutils
+import matplotlib.pyplot as plt
 import networkx as nx
+
+def draw_network(graph):
+	# draw network for fun
+	_, ax = plt.subplots(figsize=(20, 15))
+	nx.draw_networkx(graph, ax=ax, node_color="#ff0000", node_size=100, font_size=7, with_labels=True)
+	plt.show()
 
 # was lazy so used networkx :P
 @aocutils.timeFunction
