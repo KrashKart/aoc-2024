@@ -7,7 +7,7 @@ load_dotenv()
 
 now = datetime.now()
 # day = now.day
-day = 8
+day = 20
 year = now.year
 padded_day = str(day).rjust(2, "0")
 

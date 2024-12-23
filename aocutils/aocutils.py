@@ -14,6 +14,30 @@ def readFile(day: int, splitOn: str = "", isTest: bool = False, toList: bool = T
             res.append(line)
     return res
 
+def readFileWithNewline(day: int, splitOn: str = "", isTest: bool = False, toList: bool = True) -> list[str]:
+    beforeNewline = []
+    afterNewLine = []
+    isAfterNewline = False
+    filename = f"day_{day:02}/day_{day:02}.txt" if not isTest else f"day_{day:02}/test.txt"
+    with open(filename, "r") as f:
+        for line in f:
+            if line == "\n":
+                isAfterNewline = True
+                continue
+
+            line = line.strip()
+
+            if splitOn:
+                line = line.split(splitOn)
+            if toList:
+                line = list(line)
+
+            if not isAfterNewline:
+                beforeNewline.append(line)
+            else:
+                afterNewLine.append(line)
+    return beforeNewline, afterNewLine
+
 @dispatch(int, int, int, int, int, int)
 def outOfBounds(i: int, j: int, iMin: int, jMin: int, iMax: int, jMax: int) -> bool:
     return i < iMin or i > iMax or j < jMin or j > jMax
