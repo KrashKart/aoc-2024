@@ -7,7 +7,7 @@ This is my 2nd year participating, and I look forward to solving the code challe
 > Do check out my [AOC 2023](https://github.com/KrashKart/aoc-2023) repo!
 
 # Challenge
-As a challenge, I plan to use different languages to solve the problems (instead of only Python in AOC 2023). The languages I plan to use are:
+As a challenge, I plan to use different languages to solve some of the problems (instead of only Python in AOC 2023). The languages I plan to use are:
 
 - [x] Python (duh)
 - [x] Java
@@ -40,8 +40,15 @@ And the languages I plan to pick up are:
 9. [**Disk Fragmenter**](https://adventofcode.com/2024/day/9), *Python* ( :star: :star: )
 10. [**Hoof It**](https://adventofcode.com/2024/day/10), *Python* ( :star: :star: )
 11. [**Plutonian Pebbles**](https://adventofcode.com/2024/day/11), *Python* ( :star: :star: )
+12. [**Garden Groups**](https://adventofcode.com/2024/day/12), *Python* ( :star: :star: )
 13. [**Claw Contraption**](https://adventofcode.com/2024/day/13), *Python* ( :star: :star: )
 14. [**Restroom Redoubt**](https://adventofcode.com/2024/day/14), *Python* ( :star: :star: )
 15. [**Warehouse Woes**](https://adventofcode.com/2024/day/15), *Python* ( :star: :star: )
 16. [**Reindeer Maze**](https://adventofcode.com/2024/day/16), *Python* ( :star: :star: )
 17. [**Chronospatial Computer**](https://adventofcode.com/2024/day/17), *Python* ( :star: :star: )
+18. [**RAM Run**](https://adventofcode.com/2024/day/18), *Python* ( :star: :star: )
+19. [**Linen Layout**](https://adventofcode.com/2024/day/19), *Python* ( :star: :star: )
+20. [**Race Condition**](https://adventofcode.com/2024/day/20), *Python* ( :star: :star: )
+21. [**Keypad Conundrum**](https://adventofcode.com/2024/day/21), *Python* ( :star: :star: )
+22. [**Monkey Market**](https://adventofcode.com/2024/day/22), *Python* ( :star: :star: )
+23. [**LAN Party**](https://adventofcode.com/2024/day/23), *Python* ( :star: :star: )
