@@ -6,8 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 now = datetime.now()
-# day = now.day
-day = 20
+day = now.day
+# day = 24
 year = now.year
 padded_day = str(day).rjust(2, "0")
 

@@ -52,3 +52,4 @@ And the languages I plan to pick up are:
 21. [**Keypad Conundrum**](https://adventofcode.com/2024/day/21), *Python* ( :star: :star: )
 22. [**Monkey Market**](https://adventofcode.com/2024/day/22), *Python* ( :star: :star: )
 23. [**LAN Party**](https://adventofcode.com/2024/day/23), *Python* ( :star: :star: )
+24. [**Crossed Wires**](https://adventofcode.com/2024/day/24), *Python* ( :star: :star: )
